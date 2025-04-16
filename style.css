@@ -352,3 +352,84 @@ body.products {
   font-weight: bold;
   cursor: pointer;
 }
+
+
+/* Contact page specific styling */
+.contact-banner {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom, #ffe0f0, #ffddee);
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-card {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff0f8;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ff99cc;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.contact-card button {
+  background-color: #ff66a3;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-card button:hover {
+  background-color: #ff3399;
+}
+
+.cute-return-btn {
+  display: inline-block;
+  margin: 30px auto;
+  font-weight: bold;
+  background-color: #ffcce5;
+  color: #ff3399;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cute-return-btn:hover {
+  background-color: #ffb3d9;
+  color: #fff;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, input, textarea, button, a {
+  font-family: 'Comfortaa', cursive;
+}
+
+
+/* Uniformiser toute la typographie avec Comfortaa */
+body, h1, h2, h3, h4, h5, h6, input, textarea, button, a, label, p, div, span {
+  font-family: 'Comfortaa', sans-serif !important;
+}
