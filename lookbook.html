@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lookbook - Karibean Dolls</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .lookbook-container {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .lookbook-container img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .hotspot {
+      position: absolute;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .hotspot:hover {
+      outline: 2px solid #ff69b4;
+      box-shadow: 0 0 10px #ffb6d5;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:#e91e63; margin-bottom:30px;">Lookbook</h1>
+
+  <div class="lookbook-container">
+    <img src="lookbook_illustration.jpg" alt="Lookbook">
+
+    <!-- Zone 1 : Robe violette -->
+    <a href="produits.html#lavender-glow" class="hotspot" style="top: 20%; left: 5%; width: 35%; height: 40%;"></a>
+
+    <!-- Zone 2 : Maillot vert tropical -->
+    <a href="produits.html#island-slay" class="hotspot" style="top: 20%; left: 52%; width: 35%; height: 40%;"></a>
+
+    <!-- Zone 3 : T-shirt “Babe” + short -->
+    <a href="produits.html#babe-vibes" class="hotspot" style="top: 63%; left: 5%; width: 35%; height: 33%;"></a>
+
+    <!-- Zone 4 : Robe longue tropicale -->
+    <a href="produits.html#tropical-flame" class="hotspot" style="top: 63%; left: 52%; width: 35%; height: 33%;"></a>
+  </div>
+</body>
+</html>

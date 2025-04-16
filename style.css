@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(to bottom right, #ffe6fa, #ffc3e5);
+  color: #ff1493;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #fff0f5;
+  padding: 1.5rem;
+  border-bottom: 3px solid #ff69b4;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a, nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ff1493;
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero {
+  padding: 2rem;
+}
+.hero h2 {
+  font-size: 2rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.main-image {
+  margin-top: 2rem;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,105,180,0.4);
+}
+.caption {
+  font-style: italic;
+  color: #d63384;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.product {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  color: #ff1493;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.lookbook {
+  background: linear-gradient(to bottom right, #fddde6, #c1f0f6);
+}
+
+.lookbook-image {
+  padding: 2rem;
+}
+
+.lookbook-image img {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
+
+body.vip {
+  background: linear-gradient(145deg, #ffe0f0, #ffeacf);
+  font-family: 'Fredoka', sans-serif;
+}
+.vip-banner {
+  text-align: center;
+  padding: 2rem;
+}
+.vip-banner img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
+.vip-text {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #d63384;
+  font-weight: bold;
+}
+.vip-benefits {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #ff1493;
+  margin: 1rem 0 2rem;
+}
+.vip-benefits li {
+  margin: 0.5rem 0;
+}
+.vip-form input {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  margin: 0.5rem;
+  width: 250px;
+  max-width: 90%;
+}
+.vip-form button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #ffc0cb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.vip-form button:hover {
+  background: #ff1493;
+}
+.crown {
+  animation: sparkle 1s infinite alternate;
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-right: 0.3rem;
+}
+@keyframes sparkle {
+  from { transform: scale(1); color: gold; }
+  to { transform: scale(1.2); color: #ffcc00; }
+}
+
+body.limited {
+  background: linear-gradient(135deg, #fff0f5, #fff8dc);
+}
+
+.limited-banner {
+  text-align: center;
+  padding: 2rem;
+}
+
+.limited-banner img {
+  width: 85%;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.limited-text {
+  font-size: 1.4rem;
+  color: #b8860b;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.product.limited {
+  position: relative;
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.product.limited:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.6);
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: linear-gradient(to right, #ff69b4, gold);
+  color: white;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+body.cart {
+  background: linear-gradient(to bottom right, #ffd1ec, #ffe4f7);
+  font-family: 'Fredoka', sans-serif;
+}
+
+.cart-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.cart-left {
+  flex: 1 1 55%;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 0 10px #fbb6ce;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+.details .name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.details .price {
+  color: #ff1493;
+}
+
+.details .qty {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #ff69b4;
+}
+
+.cart-total {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  text-align: right;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.cart-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.cart-buttons button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cart-buttons .checkout {
+  background: #ff69b4;
+  color: white;
+  box-shadow: 0 0 10px #ffc0cb;
+}
+
+.cart-buttons .continue {
+  background: white;
+  color: #ff1493;
+  border: 2px solid #ff1493;
+}
+
+.cart-right {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-right img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
+
+body.products {
+  background: linear-gradient(to bottom, #ffe6f7, #ffeaf0);
+  font-family: 'Fredoka', sans-serif;
+  padding: 2rem;
+}
+
+.products-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 0 10px #f9b8d0;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffb6c1;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  color: #ff1493;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.product-card .actions button {
+  background: #ff69b4;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
