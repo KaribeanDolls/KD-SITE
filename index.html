@@ -4,121 +4,79 @@
 <head>
   <meta charset="UTF-8">
   <title>Karibean Dolls</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom, #ffe4f0, #ffd6f7);
-      color: #333;
-      overflow-x: hidden;
-    }
-    header {
-      background-color: #ffe4f0;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 10px;
-    }
-    nav button {
-      background-color: #ff5ec4;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      padding: 10px 20px;
-      font-weight: bold;
-    }
-    .main-content {
-      text-align: center;
-      padding: 20px;
-    }
-    .glitter-button {
-      background: linear-gradient(to right, #ff72d0, #ffa0e0);
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 25px;
-      font-size: 16px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin: 20px auto;
-    }
-    #glitter-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      width: 100%;
-      height: 100%;
-      z-index: 999;
-    }
-    .glitter {
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 50%;
-      pointer-events: none;
-      animation: fall 5s linear forwards;
-    }
-    @keyframes fall {
-      0% { transform: translateY(0); opacity: 1; }
-      100% { transform: translateY(100vh); opacity: 0; }
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      background-color: #ffe4f0;
-      margin-top: 50px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <h1>Karibean Dolls</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="vip.html">VIP Club</a></li>
+        <li><a href="limited.html">Édition Limitée</a></li>
+        <li><a href="favoris.html">Favoris</a></li>
+        <li><a href="panier.html">Panier</a></li>
+        <li><a href="avis.html">Avis</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Bienvenue chez Karibean Dolls</h2>
+      <p>Découvre ta vibe baddie tropicale Y2K dès maintenant !</p>
+      <img src="cartoon_keemberlie.jpg" alt="Keemberlie Cartoon" class="main-image">
+      <p class="caption">Shop the look — Y2K baddie forever</p>
+    </section>
+  </main>
 
-<header>
-  <h1>Karibean Dolls</h1>
-  <nav>
-    <button>Accueil</button>
-    <button>Produits</button>
-    <button>Lookbook</button>
-    <button>Contact</button>
-    <button>VIP</button>
-  </nav>
-</header>
-
-<div class="main-content">
-  <p>Bienvenue chez Karibean Dolls</p>
-  <p>Explore ton univers baddie tropical et Y2K.</p>
-
-  <p><strong>Pas connectée ? Tu n'entendras que des extraits…</strong></p>
-  <button class="glitter-button" onclick="startGlitter()">Clique-moi pour du glitter ✨</button>
-
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7kWZ6eYsvv6JxviWkp8tDR?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-
-<div id="glitter-container"></div>
-
-<footer>
-  © 2025 Karibean Dolls. All rights reserved. Playlist intégrée via Spotify – tous droits réservés aux artistes.
-</footer>
 
 <script>
-  function startGlitter() {
-    const container = document.getElementById('glitter-container');
-    for (let i = 0; i < 100; i++) {
-      const glitter = document.createElement('div');
-      glitter.className = 'glitter';
-      glitter.style.left = Math.random() * 100 + 'vw';
-      glitter.style.animationDuration = (2 + Math.random() * 3) + 's';
-      container.appendChild(glitter);
-      setTimeout(() => glitter.remove(), 5000);
-    }
+  // Pop-up de bienvenue
+  window.addEventListener("load", () => {
+    showPopup(
+      "Hey baddie ! Bienvenue chez Karibean Dolls — découvre ta vibe Y2K tropicale maintenant !",
+      "Magasiner",
+      "produits.html"
+    );
+  });
+
+  // Pop-up promo après 5 secondes
+  setTimeout(() => {
+    showPopup(
+      "Réserve ton look de rêve avec -10% ! Utilise le code promo : <strong>DOLL10</strong>",
+      "Copier le code",
+      "#"
+    );
+  }, 5000);
+
+  // Pop-up VIP Club après 10 secondes
+  setTimeout(() => {
+    showPopup(
+      "Deviens une Karibean VIP Doll ! Reçois les dernières exclus & offres secrètes !",
+      "Je m’inscris",
+      "vip.html"
+    );
+  }, 10000);
+
+  // Fonction de création de pop-up
+  function showPopup(message, buttonText, link) {
+    const popup = document.createElement("div");
+    popup.className = "popup-overlay";
+    popup.innerHTML = `
+      <div class="popup-content">
+        <span class="popup-close" onclick="this.parentElement.parentElement.remove()">×</span>
+        <h2>Karibean Dolls</h2>
+        <p>${message}</p>
+        <button class="popup-btn" onclick="window.location.href='${link}'">${buttonText}</button>
+      </div>
+    `;
+    document.body.appendChild(popup);
   }
 </script>
 
 </body>
-</html>
