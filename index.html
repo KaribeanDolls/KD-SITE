@@ -33,50 +33,5 @@
       <p class="caption">Shop the look — Y2K baddie forever</p>
     </section>
   </main>
-
-
-<script>
-  // Pop-up de bienvenue
-  window.addEventListener("load", () => {
-    showPopup(
-      "Hey baddie ! Bienvenue chez Karibean Dolls — découvre ta vibe Y2K tropicale maintenant !",
-      "Magasiner",
-      "produits.html"
-    );
-  });
-
-  // Pop-up promo après 5 secondes
-  setTimeout(() => {
-    showPopup(
-      "Réserve ton look de rêve avec -10% ! Utilise le code promo : <strong>DOLL10</strong>",
-      "Copier le code",
-      "#"
-    );
-  }, 5000);
-
-  // Pop-up VIP Club après 10 secondes
-  setTimeout(() => {
-    showPopup(
-      "Deviens une Karibean VIP Doll ! Reçois les dernières exclus & offres secrètes !",
-      "Je m’inscris",
-      "vip.html"
-    );
-  }, 10000);
-
-  // Fonction de création de pop-up
-  function showPopup(message, buttonText, link) {
-    const popup = document.createElement("div");
-    popup.className = "popup-overlay";
-    popup.innerHTML = `
-      <div class="popup-content">
-        <span class="popup-close" onclick="this.parentElement.parentElement.remove()">×</span>
-        <h2>Karibean Dolls</h2>
-        <p>${message}</p>
-        <button class="popup-btn" onclick="window.location.href='${link}'">${buttonText}</button>
-      </div>
-    `;
-    document.body.appendChild(popup);
-  }
-</script>
-
 </body>
+</html>
